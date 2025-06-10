@@ -1,0 +1,78 @@
+How to Set Up Python + Streamlit with Anaconda
+🔽 Step 1: Download & Install Anaconda
+Go to: 👉 https://www.anaconda.com/products/distribution
+
+Click "Download" → Choose your operating system (Windows).
+
+Download the "64-bit Graphical Installer".
+
+Open the installer and follow the steps:
+
+Accept the license
+
+Install for "Just Me"
+
+Use the default folder
+
+Make sure the box “Add Anaconda to my PATH environment variable” is unchecked (Anaconda handles it automatically)
+
+✅ Once installed, you now have Python and pip configured through Anaconda Prompt.
+
+🧭 Step 2: Open Anaconda Prompt
+Press Windows key → search for “Anaconda Prompt”
+
+Open it (black command window)
+
+Now test:python --version
+pip --version
+
+
+python --version
+pip --version
+Both should work now.
+
+🚀 Step 3: Create a New Environment for Streamlit (Recommended)
+This keeps things clean and isolated.
+
+bash
+conda create -n streamlit-env python=3.10
+
+conda create -n streamlit-env python=3.10
+Activate it:
+
+conda activate streamlit-env
+📦 Step 4: Install Streamlit
+Now run:
+
+bash
+Copy
+Edit
+pip install streamlit
+Also install libraries your app needs:
+
+bash
+Copy
+Edit
+pip install pandas numpy matplotlib scikit-learn
+📂 Step 5: Navigate to Your App Folder
+Still in Anaconda Prompt, use cd:
+
+bash
+Copy
+Edit
+cd path\to\your\folder
+Example:
+
+bash
+Copy
+Edit
+cd C:\Users\Sathvik\Documents\car-purchase-app
+▶️ Step 6: Run Your App
+Now simply run:
+
+bash
+Copy
+Edit
+streamlit run app.py
+Your app will open in your browser at:
+📍 http://localhost:8501
